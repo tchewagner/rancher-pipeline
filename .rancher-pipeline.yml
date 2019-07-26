@@ -14,7 +14,7 @@ stages:
   - publishImageConfig:
       dockerfilePath: ./Dockerfile
       buildContext: .
-      tag: jonathanbaraldi/pipeline-example-go:${CICD_EXECUTION_SEQUENCE}
+      tag: tchewagner/rancher-pipeline:${CICD_EXECUTION_SEQUENCE}
       pushRemote: true
       registry: index.docker.io
 - name: Deploy
